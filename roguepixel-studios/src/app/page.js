@@ -2,12 +2,12 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import Link from "next/link";
-import heroImg from "../../public/heroImg.jpg";
+import heroImg from "../../public/heroImg2.jpg";
 
 function HomeServices(props) {
   return (
     <>
-      <div className="max-w-[300px] flex flex-col text-center justify-center items-center gap-7">
+      <div className="flex flex-col sm:col-span-4 md:col-span-2 lg:col-span-1 text-center items-center gap-6">
         <div className="bg-[#F1F1F1] w-[100px] h-[100px] rounded-full flex justify-center items-center">
           <Image src={props.source} alt={props.alter} width={36} height={36} />
         </div>
@@ -21,19 +21,25 @@ function HomeServices(props) {
 export default function Home() {
   return (
     <>
-      <div className="">
-        {/* <Image fill src={"/heroImg.jpg"} alt="heroimg" objectFit="cover" /> */}
-        {/* <div className="justify-center">
-          <h1 className="text-2xl">
+      <div className="relative m-auto w-full h-[100vh]">
+        <Image
+          src={heroImg}
+          alt="Hero Banner"
+          className="object-cover"
+          quality={100}
+          fill
+        />
+        <div className="relative top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col gap-6 max-w-[800px] text-white px-6">
+          <h1 className="sm:text-[32px] md:text-[48px] font-bold text-center">
             Digital Brilliance, Strategic Excellence: Your Success, Our Code.
           </h1>
-          <p>
+          <p className="font-medium sm:text-[18px] md:text-[24px] text-center">
             We are passionate about transforming digital landscapes and
             empowering businesses to thrive in the online realm.
           </p>
-        </div> */}
+        </div>
       </div>
-      <div className="container max-w-[1260px] m-auto">
+      <div className="container max-w-[1260px] m-auto px-6">
         <div className="flex flex-col gap-12 justify-center py-[48px]">
           <h1 className="text-[40px] font-semibold text-center">
             RoguePixel Studios
@@ -44,7 +50,7 @@ export default function Home() {
             delivering digital solutions that align with your business goals and
             drive real results.
           </p>
-          <div className="w-full flex justify-center items-start gap-[20px] flex-wrap">
+          <div className="grid grid-cols-4 justify-items-center align-top gap-[20px]">
             <HomeServices
               source={"/mobileAppIcon.png"}
               alt={"mobileappicon"}
@@ -69,35 +75,43 @@ export default function Home() {
             />
             <HomeServices
               source={"/digitalMarketing.png"}
-              alt={"mobileappicon"}
+              alt={"digitalmarketingicon"}
               service={"Digital Marketing"}
               desc={"Utilizing online channels to promote products or services"}
             />
           </div>
           <div className="flex justify-center">
-            <button className="rounded-full bg-[#E92525] text-white font-bold px-[20px] py-[10px]">
-              Our Services
-            </button>
+            <Link href={"/services"}>
+              <button className="rounded-full bg-[#E92525] text-white font-bold px-[20px] py-[10px]">
+                Our Services
+              </button>
+            </Link>
           </div>
         </div>
-        <div className="flex flex-row flex-wrap gap-[115px] py-[48px] justify-center items-center">
-          <div className="w-[581px] h-[528px]  relative">
-            <Image className="rounded-[20px]" fill src="/about.jpg" alt="" />
-          </div>
-          <div className="flex flex-col gap-[20px] max-w-[562px]">
-            <h1 className="font-semibold text-[40px]">
+        <div className="py-12 grid sm:grid-cols-1 md:grid-cols-2 sm:justify-items-center sm:items-center gap-12">
+          <Image
+            className=" object-cover rounded-[20px] sm:col-span-2 md:col-span-1"
+            src="/about.jpg"
+            alt="Working"
+            width={580}
+            height={528}
+          />
+          <div className="flex flex-col gap-[20px] max-w-[562px] sm:col-span-2 md:col-span-1">
+            <h1 className="font-semibold text-[40px] sm:text-center md:text-start">
               Redefining digital Excellence
             </h1>
-            <p className="text-[18px]">
+            <p className="text-[18px] sm:text-center md:text-start">
               Established 2021, we've embarked on a journey to reshape the
               digital experience, one pixel at a time. Our passion for
               innovation, commitment to quality, and unwavering dedication to
               our clients have positioned us as a leading digital agency.
             </p>
-            <div className="mt-6">
-              <button className="rounded-full bg-[#E92525] text-white font-bold px-[20px] py-[10px]">
-                About Us
-              </button>
+            <div className="mt-6 flex sm:justify-center sm:items-center">
+              <Link href={"/about"}>
+                <button className="rounded-full bg-[#E92525] text-white font-bold px-[20px] py-[10px]">
+                  About Us
+                </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -117,13 +131,28 @@ export default function Home() {
         </div>
       </div>
       <div className="container max-w-[1260px] m-auto">
-        <div className="py-12">
-          <h1 className="text-[40px] font-semibold">
-            Meet Client Satisfaction after working with us
-          </h1>
-          <p>Review title</p>
-          <div>stars count</div>
-          <p></p>
+        <div className="py-12 flex flex-row gap-2">
+          <div className="w-[597px] h-[419px] relative">
+            <Image
+              src={"/testimonyPhotoCombine.png"}
+              alt="TestimonyPhoto"
+              className="object-cover"
+              fill
+            />
+          </div>
+          <div className="max-w-[613px]">
+            <h1 className="text-[40px] font-semibold">
+              Meet Client Satisfaction after working with us
+            </h1>
+            <p>Best Agency!</p>
+            <p>
+              Ultricies amet vulputate nulla in elit elit orci vitae tortor.
+              Nunc ut pretium lectus aliquet varius pretium. Nec convallis morbi
+              sapien aliquet augue. Nulla nulla integer pellentesque neque cum
+              amet, turpis lacus, massa. Eu velit nunc adipiscing tincidunt
+              blandi.
+            </p>
+          </div>
         </div>
       </div>
     </>
