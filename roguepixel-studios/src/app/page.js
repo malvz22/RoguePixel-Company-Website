@@ -131,28 +131,18 @@ export default function Home() {
         </div>
       </div>
       <div className="container max-w-[1260px] m-auto px-6">
-        <div className="py-12 flex flex-row gap-2">
-          <div className="w-[597px] h-[419px] relative">
-            <Image
-              src={"/testimonyPhotoCombine.png"}
-              alt="TestimonyPhoto"
-              className="object-cover"
-              fill
-            />
-          </div>
-          <div className="max-w-[613px]">
-            <h1 className="text-[40px] font-semibold">
-              Meet Client Satisfaction after working with us
-            </h1>
-            <p>Best Agency!</p>
-            <p>
-              Ultricies amet vulputate nulla in elit elit orci vitae tortor.
-              Nunc ut pretium lectus aliquet varius pretium. Nec convallis morbi
-              sapien aliquet augue. Nulla nulla integer pellentesque neque cum
-              amet, turpis lacus, massa. Eu velit nunc adipiscing tincidunt
-              blandi.
-            </p>
-          </div>
+        <div className="py-12 flex flex-col justify-center items-center text-center">
+          <h1 className="text-[40px] font-semibold">
+            Meet Client Satisfaction after working with us
+          </h1>
+          <p>Best Agency!</p>
+          <p>
+            Ultricies amet vulputate nulla in elit elit orci vitae tortor.
+            Nunc ut pretium lectus aliquet varius pretium. Nec convallis morbi
+            sapien aliquet augue. Nulla nulla integer pellentesque neque cum
+            amet, turpis lacus, massa. Eu velit nunc adipiscing tincidunt
+            blandi.
+          </p>
         </div>
       </div>
     </>

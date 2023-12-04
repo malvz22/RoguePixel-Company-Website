@@ -15,7 +15,7 @@ export default function Navbar() {
   return (
     <>
       <div className=" bg-white sticky top-0 left-0 z-50">
-        <div className="m-auto max-w-[1260px] h-[100px] flex items-center justify-between px-6">
+        <div className="m-auto max-w-[1260px] h-[60px] flex items-center justify-between px-6">
           <Link className="sm:hidden md:flex" href="/">
             <Image
               src="/RoguePixel.png"
@@ -33,7 +33,7 @@ export default function Navbar() {
             />
           </Link>
 
-          <ul className="sm:hidden lg:flex gap-12 font-bold text-[20px]">
+          <ul className="sm:hidden lg:flex gap-12 font-semibold text-[20px]">
             <li className="cursor-pointer">
               <Link href={"/"}>Home</Link>
             </li>

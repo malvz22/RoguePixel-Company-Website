@@ -153,7 +153,7 @@ export default function Services() {
             <li>Email Marketing</li>
           </ul>
         </div>
-        <div className="py-12 grid grid-cols-6 sm:justify-items-center sm:items-center gap-12">
+        <div className="py-12 grid grid-cols-6 sm:justify-items-center sm:items-center align-top gap-6">
           <h1 className="font-semibold sm:text-[24px] lg:text-[40px] text-center col-span-6">
             Testimonials
           </h1>
@@ -167,37 +167,58 @@ export default function Services() {
           <Testimony
             imageSrc="/testimony/customer1.png"
             imageAlt="displaypic1"
-            company="Gillette"
-            name="Darrell Steward"
-            testimony="Sed pretium, in et neque sed. Magna euismod ac, gravida accumsan. Viverra diam non sagittis,"
+            company="QuantumTech Solutions"
+            name="Jessica Ramirez"
+            testimony="RoguePixel Studios doesn't just deliver projects; they deliver innovative solutions that drive outstanding results. Their digital marketing strategies significantly boosted our online visibility, and the mobile app they developed has become an essential part of our customer experience. Working with RoguePixel is synonymous with success."
           />
           <Testimony
             imageSrc="/testimony/customer1.png"
             imageAlt="displaypic1"
-            company="Gillette"
-            name="Darrell Steward"
-            testimony="Sed pretium, in et neque sed. Magna euismod ac, gravida accumsan. Viverra diam non sagittis,"
+            company="NovaByte Gaming"
+            name="Ryan Mitchell"
+            testimony="RoguePixel Studios has an unmatched flair for graphic design. They took our brand's visual identity to a whole new level with a stunning logo, cohesive branding collateral, and captivating social media graphics. Their creativity knows no bounds, and the results speak for themselves."
           />
           <Testimony
             imageSrc="/testimony/customer1.png"
             imageAlt="displaypic1"
-            company="Gillette"
-            name="Darrell Steward"
-            testimony="Sed pretium, in et neque sed. Magna euismod ac, gravida accumsan. Viverra diam non sagittis,"
+            company="ExploreLocal Travels"
+            name="Sarah Davis"
+            testimony="RoguePixel Studios turned our website vision into reality seamlessly. Their attention to detail, user-centric design, and technical prowess resulted in a website that not only looks fantastic but also performs exceptionally well. We're thrilled with the end product and the positive impact it's had on our online presence."
           />
           <Testimony
             imageSrc="/testimony/customer1.png"
             imageAlt="displaypic1"
-            company="Gillette"
-            name="Darrell Steward"
-            testimony="Sed pretium, in et neque sed. Magna euismod ac, gravida accumsan. Viverra diam non sagittis,"
+            company="VisionaryTech Solutions"
+            name="Chris Martinez"
+            testimony="Choosing RoguePixel Studios for our digital marketing needs was a game-changer. Their team's strategic approach, coupled with in-depth industry knowledge, has significantly increased our online reach and engagement. The results are tangible, and we're grateful for the impact RoguePixel Studios has had on our brand."
           />
           <Testimony
             imageSrc="/testimony/customer1.png"
             imageAlt="displaypic1"
-            company="Gillette"
-            name="Darrell Steward"
-            testimony="Sed pretium, in et neque sed. Magna euismod ac, gravida accumsan. Viverra diam non sagittis,"
+            company="Pinnacle Innovations"
+            name="Emily Carter"
+            testimony="RoguePixel Studios redefines professionalism in the digital agency space. From project initiation to completion, their team demonstrated exceptional communication, transparency, and a genuine commitment to our success. Working with RoguePixel is not just a service; it's a partnership built on trust and mutual success."
+          />
+          <Testimony
+            imageSrc="/testimony/customer1.png"
+            imageAlt="displaypic1"
+            company="Synergy Enterprises"
+            name="Alex Turner"
+            testimony="RoguePixel Studios understands that one size doesn't fit all. Their ability to tailor solutions to our unique needs set them apart. Whether it's mobile app development, website design, or graphic creation, RoguePixel's team consistently delivers high-quality, customized solutions that resonate with our audience."
+          />
+          <Testimony
+            imageSrc="/testimony/customer1.png"
+            imageAlt="displaypic1"
+            company="VisionaryTech Solutions"
+            name="Olivia Simmons"
+            testimony="RoguePixel Studios doesn't just promise results; they deliver. Their digital marketing strategies and website development expertise have played a crucial role in our online success. The increase in traffic, engagement, and conversions is a testament to RoguePixel's effectiveness in the ever-evolving digital landscape."
+          />
+          <Testimony
+            imageSrc="/testimony/customer1.png"
+            imageAlt="displaypic1"
+            company="FutureForge Technologies"
+            name="Brian Thompson"
+            testimony="RoguePixel Studios isn't just a digital agency; they're architects of tomorrow's digital experience. Their forward-thinking approach to design, coupled with cutting-edge technology, positions them at the forefront of the industry. It's not just about what's trending today but about what will define the digital landscape tomorrow."
           />
         </div>
       </div>
