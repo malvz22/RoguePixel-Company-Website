@@ -117,7 +117,7 @@ export default function Home() {
         </div>
       </div>
       <div className="bg-[#C4C4C4] bg-opacity-20">
-        <div className="container max-w-[1260px] h-[293px] m-auto flex flex-row flex-wrap justify-between items-center">
+        <div className="container max-w-[1260px] px-6 h-[293px] m-auto flex flex-row flex-wrap justify-between items-center">
           <h1 className="font-semibold text-[37px] max-w-[530px]">
             Let's Craft Your Digital Narrative
           </h1>
@@ -130,7 +130,7 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className="container max-w-[1260px] m-auto">
+      <div className="container max-w-[1260px] m-auto px-6">
         <div className="py-12 flex flex-row gap-2">
           <div className="w-[597px] h-[419px] relative">
             <Image

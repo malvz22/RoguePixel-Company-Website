@@ -43,6 +43,7 @@ export default function About() {
             alt="Working"
             width={580}
             height={528}
+            layout="intrinsic"
           />
           <div className="max-w-[700px] sm:text-center md:text-start sm:col-span-2 md:col-span-1">
             <p>
