@@ -16,11 +16,11 @@ function Testimony(props) {
             quality={100}
           />
           <div>
-            <p className="font-semibold text-[20px]">{props.company}</p>
-            <p>{props.name}</p>
+            <p className="font-semibold sm:text-[14px] lg:text-[16px]">{props.company}</p>
+            <p className="sm:text-[12px] md:text-[14px]">{props.name}</p>
           </div>
         </div>
-        <p>{props.testimony}</p>
+        <p className="font-[14px]">{props.testimony}</p>
       </div>
     </>
   );

@@ -1,33 +1,54 @@
 import Image from "next/image";
+import { MdEmail } from "react-icons/md";
+import { FaPhone } from "react-icons/fa6";
 
-function PersonDetails(props) {
-  return (
-    <>
-      <div className="flex flex-col justify-items-center align-top gap-1 sm:col-span-6 md:col-span-3 lg:col-span-2">
-        <Image src={"/teams/team.jpeg"} width={180} height={180} layout="intrinsic" alt="teamImg" className="rounded-full" />
-        <p className="font-semibold">{props.name}</p>
-        <p className="">{props.expertise}</p>
-        <p className="">{props.contact}</p>
-      </div>
-    </>
-  );
+async function getData() {
+  const res = await fetch(`https://randomuser.me/api?results=12&inc=name,email,phone,id,picture&nat=us,gb`)
+  const data = await res.json();
+  return data.results;
 }
 
-export default function Teams() {
+
+export default async function Teams() {
+
+  const data = await getData();
+
+  const expertiseArr = ["CEO/Founder", "Creative Director", "Technical Director", "Project Manager", "Digital Marketing Manager", "UI/UX Designer", "Web Developer (Front-end and Back-end)", "Mobile App Developer", "Graphic Designer", "Content Strategist/Writer", "Social Media Manager", "Quality Assurance (QA) Specialist"]
+
   return (
     <>
       <div className="container max-w-[1260px] m-auto px-6">
-        <div className="py-12 flex flex-col justify-center items-center text-center">
+        <div className="py-12 flex flex-col justify-center items-center text-center gap-6">
           <h1 className="sm:text-[24px] lg:text-[40px] text-center font-semibold">
             Our Teams
           </h1>
+
+          <p className="font-semibold py-12">Meet the RoguePixel Studios Team: Innovators, Creators, Collaborators</p>
+
           <div className="grid grid-cols-6 gap-6">
-            <PersonDetails name="Testing" expertise="Random" contact="email.com" />
-            <PersonDetails name="Testing" expertise="Random" contact="email.com" />
-            <PersonDetails name="Testing" expertise="Random" contact="email.com" />
-            <PersonDetails name="Testing" expertise="Random" contact="email.com" />
-            <PersonDetails name="Testing" expertise="Random" contact="email.com" />
-            <PersonDetails name="Testing" expertise="Random" contact="email.com" />
+            {data.map((teams, i) => {
+              return (
+                <>
+                  <div className="flex flex-col items-center align-top sm:col-span-6 md:col-span-3 lg:col-span-2" key={teams.id.value}>
+                    {/* <PersonDetails name={teams.name.first + ` ` + teams.name.last} expertise="Random" contact={teams.email} imgSource={teams.picture.medium} /> */}
+                    <Image src={teams.picture.medium} width={120} height={120} quality={100} alt="teamImg" className="rounded-xl mb-3" />
+                    <div className="">
+                      <p className="font-semibold">{teams.name.first + ` ` + teams.name.last}</p>
+                    </div>
+                    <p className="">{expertiseArr[i]}</p>
+                    <div className="flex flex-row justify-center items-center gap-2">
+                      <MdEmail className="" />
+                      <p className="">{teams.email}</p>
+                    </div>
+                    <div className="flex flex-row justify-center items-center gap-2">
+                      <FaPhone />
+                      <p>{teams.phone}</p>
+                    </div>
+
+                  </div>
+                </>
+              );
+            })}
           </div>
         </div>
       </div>
