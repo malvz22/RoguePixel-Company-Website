@@ -27,6 +27,7 @@ export default function Home() {
           alt="Hero Banner"
           className="object-cover"
           quality={100}
+          priority
           fill
         />
         <div className="relative top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col gap-6 max-w-[800px] text-white px-6">
@@ -82,7 +83,7 @@ export default function Home() {
           </div>
           <div className="flex justify-center">
             <Link href={"/services"}>
-              <button className="rounded-full bg-[#E92525] text-white font-bold px-[20px] py-[10px] text-[12px] md-text-[18px]">
+              <button className="rounded-full bg-[#AF1818] text-white font-bold px-[20px] py-[10px] text-[12px] md-text-[18px]">
                 Our Services
               </button>
             </Link>
@@ -108,7 +109,7 @@ export default function Home() {
             </p>
             <div className="mt-6 flex justify-center sm:items-center">
               <Link href={"/about"}>
-                <button className="rounded-full bg-[#E92525] text-white font-bold px-[20px] py-[10px] text-[12px] md-text-[18px]">
+                <button className="rounded-full bg-[#AF1818] text-white font-bold px-[20px] py-[10px] text-[12px] md-text-[18px]">
                   About Us
                 </button>
               </Link>
