@@ -7,7 +7,7 @@ import heroImg from "../../public/heroImg2.jpg";
 function HomeServices(props) {
   return (
     <>
-      <div className="flex flex-col sm:col-span-4 md:col-span-2 lg:col-span-1 text-center items-center gap-6">
+      <div className="flex flex-col col-span-4 md:col-span-2 lg:col-span-1 text-center items-center gap-6">
         <div className="bg-[#F1F1F1] w-[100px] h-[100px] rounded-full flex justify-center items-center">
           <Image src={props.source} alt={props.alter} width={36} height={36} />
         </div>
@@ -41,7 +41,7 @@ export default function Home() {
       </div>
       <div className="container max-w-[1260px] m-auto px-6">
         <div className="flex flex-col gap-12 justify-center py-[48px]">
-          <h1 className="text-[40px] font-semibold text-center">
+          <h1 className="text-[40px] font-bold text-center">
             RoguePixel Studios
           </h1>
           <p className="text-[16px] font-semibold text-center">
@@ -53,7 +53,7 @@ export default function Home() {
           <div className="grid grid-cols-4 justify-items-center align-top gap-[20px]">
             <HomeServices
               source={"/mobileAppIcon.png"}
-              alt={"mobileappicon"}
+              alter={"mobileappicon"}
               service={"Mobile App Development"}
               desc={
                 "Creating mobile applications to enhance user engagement and accessibility"
@@ -61,7 +61,7 @@ export default function Home() {
             />
             <HomeServices
               source={"/webDev.png"}
-              alt={"webdevicon"}
+              alter={"webdevicon"}
               service={"Website Development"}
               desc={
                 "Creating visually appealing and functional websites that are user-friendly and responsive"
@@ -69,20 +69,20 @@ export default function Home() {
             />
             <HomeServices
               source={"/graphicDesign.png"}
-              alt={"graphicdesignicon"}
+              alter={"graphicdesignicon"}
               service={"Graphic Designing"}
               desc={"Designing visual elements for online and offline use"}
             />
             <HomeServices
               source={"/digitalMarketing.png"}
-              alt={"digitalmarketingicon"}
+              alter={"digitalmarketingicon"}
               service={"Digital Marketing"}
               desc={"Utilizing online channels to promote products or services"}
             />
           </div>
           <div className="flex justify-center">
             <Link href={"/services"}>
-              <button className="rounded-full bg-[#E92525] text-white font-bold px-[20px] py-[10px]">
+              <button className="rounded-full bg-[#E92525] text-white font-bold px-[20px] py-[10px] text-[12px] md-text-[18px]">
                 Our Services
               </button>
             </Link>
@@ -96,19 +96,19 @@ export default function Home() {
             width={580}
             height={528}
           />
-          <div className="flex flex-col gap-[20px] max-w-[562px] sm:col-span-2 md:col-span-1">
-            <h1 className="font-semibold text-[40px] sm:text-center md:text-start">
+          <div className="flex flex-col gap-3 lg:gap-[20px] max-w-[562px] sm:col-span-2 md:col-span-1">
+            <h1 className="font-bold text-[24px] lg:text-[40px] text-center md:text-start">
               Redefining digital Excellence
             </h1>
-            <p className="text-[18px] sm:text-center md:text-start">
+            <p className="text-[12px] lg:text-[18px] text-center md:text-start">
               Established 2021, we've embarked on a journey to reshape the
               digital experience, one pixel at a time. Our passion for
               innovation, commitment to quality, and unwavering dedication to
               our clients have positioned us as a leading digital agency.
             </p>
-            <div className="mt-6 flex sm:justify-center sm:items-center">
+            <div className="mt-6 flex justify-center sm:items-center">
               <Link href={"/about"}>
-                <button className="rounded-full bg-[#E92525] text-white font-bold px-[20px] py-[10px]">
+                <button className="rounded-full bg-[#E92525] text-white font-bold px-[20px] py-[10px] text-[12px] md-text-[18px]">
                   About Us
                 </button>
               </Link>
@@ -117,11 +117,11 @@ export default function Home() {
         </div>
       </div>
       <div className="bg-[#C4C4C4] bg-opacity-20">
-        <div className="container max-w-[1260px] px-6 h-[293px] m-auto flex flex-row flex-wrap justify-between items-center">
-          <h1 className="font-semibold text-[37px] max-w-[530px]">
+        <div className="container max-w-[1260px] px-6 py-12 m-auto flex flex-col lg:flex-row justify-between items-center gap-3 lg:gap-[20px]">
+          <h1 className="font-bold text-[24px] lg:text-[40px] max-w-[530px] text-center lg:text-start ">
             Let's Craft Your Digital Narrative
           </h1>
-          <p className="max-w-[660px]">
+          <p className="text-[12px] lg:text-[18px] max-w-[660px] text-center lg:text-start">
             Whether you're a startup with a bold vision or an established brand
             seeking a digital facelift, RoguePixel Studios is your partner in
             digital innovation. Join us as we navigate the digital frontier,
@@ -131,18 +131,40 @@ export default function Home() {
         </div>
       </div>
       <div className="container max-w-[1260px] m-auto px-6">
-        <div className="py-12 flex flex-col justify-center items-center text-center">
-          <h1 className="text-[40px] font-semibold">
+        <div className="py-12 justify-center items-center text-center">
+          <h1 className="font-bold text-[24px] lg:text-[40px] text-center mb-3">
             Meet Client Satisfaction after working with us
           </h1>
-          <p>Best Agency!</p>
-          <p>
-            Ultricies amet vulputate nulla in elit elit orci vitae tortor.
-            Nunc ut pretium lectus aliquet varius pretium. Nec convallis morbi
-            sapien aliquet augue. Nulla nulla integer pellentesque neque cum
-            amet, turpis lacus, massa. Eu velit nunc adipiscing tincidunt
-            blandi.
-          </p>
+          <div className="grid grid-cols-4 gap-2">
+            <div className="bg-gray-200 col-span-4 md:col-span-2 flex flex-col gap-3 p-4">
+              <p className="font-semibold">
+                Innovative Solutions, Outstanding Results
+              </p>
+              <p className="italic">"RoguePixel Studios doesn't just deliver projects; they deliver innovative solutions that drive outstanding results. Their digital marketing strategies significantly boosted our online visibility, and the mobile app they developed has become an essential part of our customer experience. Working with RoguePixel is synonymous with success."</p>
+              <p className="italic">— Jessica Ramirez, Marketing Manager, QuantumTech Solutions</p>
+            </div>
+            <div className="bg-gray-200 col-span-4 md:col-span-2 flex flex-col gap-3 p-4">
+              <p className="font-semibold">
+                Professionalism Redefined
+              </p>
+              <p className="italic">"RoguePixel Studios redefines professionalism in the digital agency space. From project initiation to completion, their team demonstrated exceptional communication, transparency, and a genuine commitment to our success. Working with RoguePixel is not just a service; it's a partnership built on trust and mutual success."</p>
+              <p className="italic">— Emily Carter, CEO, Pinnacle Innovations</p>
+            </div>
+            <div className="bg-gray-200 col-span-4 md:col-span-2 flex flex-col gap-3 p-4">
+              <p className="font-semibold">
+                Tailored Solutions for Every Need
+              </p>
+              <p className="italic">"RoguePixel Studios understands that one size doesn't fit all. Their ability to tailor solutions to our unique needs set them apart. Whether it's mobile app development, website design, or graphic creation, RoguePixel's team consistently delivers high-quality, customized solutions that resonate with our audience."</p>
+              <p className="italic">— Alex Turner, COO, Synergy Enterprises</p>
+            </div>
+            <div className="bg-gray-200 col-span-4 md:col-span-2 flex flex-col gap-3 p-4">
+              <p className="font-semibold">
+                A Team You Can Trust
+              </p>
+              <p className="italic">"RoguePixel Studios is more than a service provider; they are a team you can trust with your digital dreams. From concept to execution, their dedication to understanding our goals and delivering on them has made them an integral part of our success. Working with RoguePixel is a decision we'd make again and again."</p>
+              <p className="italic">— Jessica Miller, Founder, SparkUp Studios</p>
+            </div>
+          </div>
         </div>
       </div>
     </>

@@ -29,7 +29,7 @@ export default async function Teams() {
             {data.map((teams, i) => {
               return (
                 <>
-                  <div className="flex flex-col items-center align-top sm:col-span-6 md:col-span-3 lg:col-span-2" key={teams.id.value}>
+                  <div className="flex flex-col items-center align-top col-span-6 md:col-span-3 lg:col-span-2" key={teams.id.value}>
                     {/* <PersonDetails name={teams.name.first + ` ` + teams.name.last} expertise="Random" contact={teams.email} imgSource={teams.picture.medium} /> */}
                     <Image src={teams.picture.medium} width={120} height={120} quality={100} alt="teamImg" className="rounded-xl mb-3" />
                     <div className="">
@@ -38,11 +38,11 @@ export default async function Teams() {
                     <p className="">{expertiseArr[i]}</p>
                     <div className="flex flex-row justify-center items-center gap-2">
                       <MdEmail className="" />
-                      <p className="">{teams.email}</p>
+                      <p className="text-[12px]">{teams.email}</p>
                     </div>
                     <div className="flex flex-row justify-center items-center gap-2">
                       <FaPhone />
-                      <p>{teams.phone}</p>
+                      <p className="text-[12px]">{teams.phone}</p>
                     </div>
 
                   </div>

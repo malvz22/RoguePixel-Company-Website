@@ -4,10 +4,10 @@ import Image from "next/image";
 function CoreValues(props) {
   return (
     <>
-      <div className="flex flex-col items-center sm:col-span-4 md:col-span-2 lg:col-span-1 gap-3">
-        <Image src={props.source} alt={props.alter} width={110} height={110} />
-        <p className="text-center font-semibold text-[22px]">{props.name}</p>
-        <p className="text-center text-[18px]">{props.desc}</p>
+      <div className="flex flex-col items-center col-span-4 md:col-span-2 lg:col-span-1 gap-3">
+        <Image src={props.source} alt={props.alter} width={100} height={100} />
+        <p className="text-center font-semibold text-[18px] lg:text-[22px]">{props.name}</p>
+        <p className="text-center text-[12px] lg:text-[18px]">{props.desc}</p>
       </div>
     </>
   );
@@ -33,20 +33,20 @@ export default function About() {
             digital agency.
           </p>
         </div>
-        <div className="py-12 grid sm:grid-cols-1 md:grid-cols-2 sm:justify-items-center sm:items-center gap-12">
-          <h1 className="font-semibold text-[40px] text-center col-span-2">
+        <div className="py-12 grid grid-cols-2 sm:justify-items-center sm:items-center gap-12">
+          <h1 className="text-[24px] lg:text-[40px] text-center font-bold col-span-2">
             Our History
           </h1>
           <Image
-            className=" object-cover rounded-[20px] sm:col-span-2 md:col-span-1"
+            className=" object-cover rounded-[20px] col-span-2 md:col-span-1"
             src="/about.jpg"
             alt="Working"
             width={580}
             height={528}
             layout="intrinsic"
           />
-          <div className="max-w-[700px] sm:text-center md:text-start sm:col-span-2 md:col-span-1">
-            <p>
+          <div className="max-w-[700px] text-center md:text-start col-span-2 md:col-span-1">
+            <p className="text-[12px] lg:text-[18px]">
               Founded by a team of seasoned professionals with a shared vision,
               RoguePixel Studios was born out of the idea that digital solutions
               should be as unique as the brands they represent. Over the years,
@@ -56,19 +56,19 @@ export default function About() {
             </p>
           </div>
         </div>
-        <div className="py-12 grid sm:grid-cols-1 md:grid-cols-2 sm:justify-items-center sm:items-center gap-12">
-          <h1 className="font-semibold text-[40px] text-center col-span-2">
+        <div className="py-12 grid grid-cols-2 sm:justify-items-center sm:items-center gap-12">
+          <h1 className="text-[24px] lg:text-[40px] text-center font-bold col-span-2">
             The RoguePixel Studios Team
           </h1>
           <Image
-            className=" object-cover rounded-[20px] sm:col-span-2 md:col-span-1 order-last"
+            className=" object-cover rounded-[20px] col-span-2 md:col-span-1 order-last"
             src="/about2.jpg"
             alt="Working"
             width={580}
             height={528}
           />
-          <div className="max-w-[700px] sm:text-center md:text-start sm:col-span-2 md:col-span-1 sm:order-last md:order-2">
-            <p>
+          <div className="max-w-[700px] text-center md:text-start col-span-2 md:col-span-1 order-last md:order-2">
+            <p className="text-[12px] lg:text-[18px]">
               Our strength lies in our team — a dynamic blend of creative minds,
               tech enthusiasts, and strategic thinkers. From web developers
               crafting seamless user experiences to marketing mavens driving
@@ -77,19 +77,19 @@ export default function About() {
             </p>
           </div>
         </div>
-        <div className="py-12 grid sm:grid-cols-1 md:grid-cols-2 sm:justify-items-center sm:items-center gap-12">
-          <h1 className="font-semibold text-[40px] text-center col-span-2">
+        <div className="py-12 grid grid-cols-2 sm:justify-items-center sm:items-center gap-12">
+          <h1 className="text-[24px] lg:text-[40px] text-center font-bold col-span-2">
             Our Culture
           </h1>
           <Image
-            className=" object-cover rounded-[20px] sm:col-span-2 md:col-span-1"
-            src="/about.jpg"
+            className=" object-cover rounded-[20px] col-span-2 md:col-span-1"
+            src="/culture.jpg"
             alt="Working"
             width={580}
             height={528}
           />
-          <div className="max-w-[700px] sm:text-center md:text-start sm:col-span-2 md:col-span-1">
-            <p>
+          <div className="max-w-[700px] text-center md:text-start col-span-2 md:col-span-1">
+            <p className="text-[12px] lg:text-[18px]">
               At RoguePixel, we foster a culture of collaboration, innovation,
               and continuous learning. We believe in pushing boundaries and
               challenging the status quo. Our work environment is not just about
@@ -100,7 +100,7 @@ export default function About() {
           </div>
         </div>
         <div className="py-12 flex flex-col gap-12">
-          <h1 className="font-semibold text-[40px] text-center col-span-2">
+          <h1 className="text-[24px] lg:text-[40px] text-center font-bold col-span-2">
             Why choose RoguePixel Studios?
           </h1>
           <div className="grid grid-cols-4 align-top gap-8">

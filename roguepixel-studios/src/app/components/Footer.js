@@ -12,7 +12,7 @@ export default function Footer() {
           alt="roguepixelwhitelogo"
         />
 
-        <ul className="flex sm:flex-col md:flex-row sm:gap-6 md:gap-[80px] sm:text-center md:text-start text-white  text-[18px]">
+        <ul className="flex flex-col md:flex-row gap-6 md:gap-[80px] text-center md:text-start text-white  text-[18px]">
           <li className="cursor-pointer">
             <Link href={"/"}>Home</Link>
           </li>

@@ -5,22 +5,22 @@ import Image from "next/image";
 function Testimony(props) {
   return (
     <>
-      <div className="max-w-[385px] sm:col-span-6 md:col-span-3 lg:col-span-2 h-auto flex flex-col bg-white border-solid border-[2px] border-[#e6e6e6] rounded-[20px] p-[20px] gap-5">
-        <div className="flex flex-row gap-5">
+      <div className="max-w-[385px] col-span-6 md:col-span-3 lg:col-span-2 h-auto flex flex-col bg-white border-solid border-[2px] border-[#e6e6e6] rounded-[20px] p-[20px] gap-5 text-center sm:text-start">
+        <div className="flex flex-col sm:flex-row gap-5 items-center">
           <Image
             src={props.imageSrc}
             alt={props.imageAlt}
             width={60}
             height={60}
-            layout="intrinsic"
             quality={100}
+            className="rounded-full"
           />
           <div>
             <p className="font-semibold sm:text-[14px] lg:text-[16px]">{props.company}</p>
             <p className="sm:text-[12px] md:text-[14px]">{props.name}</p>
           </div>
         </div>
-        <p className="font-[14px]">{props.testimony}</p>
+        <p className="text-[12px] md:text-[14px]">{props.testimony}</p>
       </div>
     </>
   );
@@ -154,67 +154,67 @@ export default function Services() {
           </ul>
         </div>
         <div className="py-12 grid grid-cols-6 sm:justify-items-center sm:items-center align-top gap-6">
-          <h1 className="font-semibold sm:text-[24px] lg:text-[40px] text-center col-span-6">
+          <h1 className="font-semibold text-[24px] lg:text-[40px] text-center col-span-6">
             Testimonials
           </h1>
           <Testimony
-            imageSrc="/testimony/customer1.png"
+            imageSrc="/testimony/customer8.jpg"
             imageAlt="displaypic1"
             company="NextGen Innovations"
             name="Mark Anderson"
             testimony="RoguePixel Studios has been the perfect partner for our digital journey. Their team's expertise in web development, app design, and digital marketing is unparalleled. Our online presence has evolved into something truly exceptional, thanks to RoguePixel's innovative solutions and unwavering commitment to excellence."
           />
           <Testimony
-            imageSrc="/testimony/customer1.png"
+            imageSrc="/testimony/customer3.jpg"
             imageAlt="displaypic1"
             company="QuantumTech Solutions"
             name="Jessica Ramirez"
             testimony="RoguePixel Studios doesn't just deliver projects; they deliver innovative solutions that drive outstanding results. Their digital marketing strategies significantly boosted our online visibility, and the mobile app they developed has become an essential part of our customer experience. Working with RoguePixel is synonymous with success."
           />
           <Testimony
-            imageSrc="/testimony/customer1.png"
+            imageSrc="/testimony/customer2.jpg"
             imageAlt="displaypic1"
             company="NovaByte Gaming"
             name="Ryan Mitchell"
             testimony="RoguePixel Studios has an unmatched flair for graphic design. They took our brand's visual identity to a whole new level with a stunning logo, cohesive branding collateral, and captivating social media graphics. Their creativity knows no bounds, and the results speak for themselves."
           />
           <Testimony
-            imageSrc="/testimony/customer1.png"
+            imageSrc="/testimony/customer5.jpg"
             imageAlt="displaypic1"
             company="ExploreLocal Travels"
             name="Sarah Davis"
             testimony="RoguePixel Studios turned our website vision into reality seamlessly. Their attention to detail, user-centric design, and technical prowess resulted in a website that not only looks fantastic but also performs exceptionally well. We're thrilled with the end product and the positive impact it's had on our online presence."
           />
           <Testimony
-            imageSrc="/testimony/customer1.png"
+            imageSrc="/testimony/customer4.jpg"
             imageAlt="displaypic1"
             company="VisionaryTech Solutions"
             name="Chris Martinez"
             testimony="Choosing RoguePixel Studios for our digital marketing needs was a game-changer. Their team's strategic approach, coupled with in-depth industry knowledge, has significantly increased our online reach and engagement. The results are tangible, and we're grateful for the impact RoguePixel Studios has had on our brand."
           />
           <Testimony
-            imageSrc="/testimony/customer1.png"
+            imageSrc="/testimony/customer6.jpg"
             imageAlt="displaypic1"
             company="Pinnacle Innovations"
             name="Emily Carter"
             testimony="RoguePixel Studios redefines professionalism in the digital agency space. From project initiation to completion, their team demonstrated exceptional communication, transparency, and a genuine commitment to our success. Working with RoguePixel is not just a service; it's a partnership built on trust and mutual success."
           />
           <Testimony
-            imageSrc="/testimony/customer1.png"
+            imageSrc="/testimony/customer7.jpg"
             imageAlt="displaypic1"
             company="Synergy Enterprises"
             name="Alex Turner"
             testimony="RoguePixel Studios understands that one size doesn't fit all. Their ability to tailor solutions to our unique needs set them apart. Whether it's mobile app development, website design, or graphic creation, RoguePixel's team consistently delivers high-quality, customized solutions that resonate with our audience."
           />
           <Testimony
-            imageSrc="/testimony/customer1.png"
+            imageSrc="/testimony/customer9.jpg"
             imageAlt="displaypic1"
-            company="VisionaryTech Solutions"
+            company="CloudSprint Solutions"
             name="Olivia Simmons"
             testimony="RoguePixel Studios doesn't just promise results; they deliver. Their digital marketing strategies and website development expertise have played a crucial role in our online success. The increase in traffic, engagement, and conversions is a testament to RoguePixel's effectiveness in the ever-evolving digital landscape."
           />
           <Testimony
-            imageSrc="/testimony/customer1.png"
+            imageSrc="/testimony/customer10.jpg"
             imageAlt="displaypic1"
             company="FutureForge Technologies"
             name="Brian Thompson"

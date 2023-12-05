@@ -16,7 +16,7 @@ export default function Navbar() {
     <>
       <div className=" bg-white sticky top-0 left-0 z-50">
         <div className="m-auto max-w-[1260px] h-[60px] flex items-center justify-between px-6">
-          <Link className="sm:hidden md:flex" href="/">
+          <Link className="hidden md:flex" href="/">
             <Image
               src="/RoguePixel.png"
               alt="roguePixelLogo"
@@ -24,7 +24,7 @@ export default function Navbar() {
               height={0}
             />
           </Link>
-          <Link className="sm:flex md:hidden" href="/">
+          <Link className="flex md:hidden" href="/">
             <Image
               src="/RoguePixelLogo.png"
               alt="roguePixelLogo"
@@ -33,7 +33,7 @@ export default function Navbar() {
             />
           </Link>
 
-          <ul className="sm:hidden lg:flex gap-12 font-semibold text-[20px]">
+          <ul className="hidden lg:flex gap-12 font-semibold text-[20px]">
             <li className="cursor-pointer">
               <Link href={"/"}>Home</Link>
             </li>
@@ -57,7 +57,7 @@ export default function Navbar() {
           />
         </div>
         <div className={showMenu ? "flex" : "hidden"}>
-          <div className="sm:flex w-full flex-col text-bold text-[36px] lg:hidden bg-white px-6 text-start">
+          <div className="flex w-full flex-col text-bold text-[20px] lg:hidden bg-white px-6 text-center">
             <hr></hr>
             <p className="p-3 cursor-pointer">
               <Link href={"/"} onClick={handleClick}>
