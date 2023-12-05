@@ -6,7 +6,7 @@ export default function Footer() {
     <>
       <div className="max-w-full h-auto bg-[#262626] flex flex-col justify-center items-center gap-[40px] py-12">
         <Image
-          src={"/RoguePixelWhite.png"}
+          src={"/roguePixelWhite.png"}
           width={194}
           height={0}
           alt="roguepixelwhitelogo"
