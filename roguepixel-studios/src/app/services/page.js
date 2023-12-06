@@ -39,10 +39,11 @@ export default function Services() {
             possibilities.
           </p>
         </div>
-        <div className="py-12 flex flex-col gap-6 text-center">
+        <div className="py-12 flex flex-col gap-6 text-center items-center">
           <h1 className="sm:text-[24px] lg:text-[40px] text-center font-semibold">
             Mobile App Development
           </h1>
+          <Image src="/mobileAppIcon.png" alt="MobileApp" width={36} height={36} />
           <p className="text-center sm:text-[16px] lg:text-[24px] font-semibold italic">
             Unlocking Innovation on Every Screen
           </p>
@@ -68,10 +69,11 @@ export default function Services() {
             <li>App Maintenance and Updates</li>
           </ul>
         </div>
-        <div className="py-12 flex flex-col gap-6 text-center">
+        <div className="py-12 flex flex-col gap-6 text-center items-center">
           <h1 className="sm:text-[24px] lg:text-[40px] text-center font-semibold">
             Website Development
           </h1>
+          <Image src="/webDev.png" alt="WebDev" width={36} height={36} />
           <p className="text-center sm:text-[16px] lg:text-[24px] font-semibold italic">
             Crafting Digital Experiences That Captivate
           </p>
@@ -97,10 +99,11 @@ export default function Services() {
             <li>Website Maintenance and Support</li>
           </ul>
         </div>
-        <div className="py-12 flex flex-col gap-6 text-center">
+        <div className="py-12 flex flex-col gap-6 text-center items-center">
           <h1 className="sm:text-[24px] lg:text-[40px] text-center font-semibold">
             Graphic Designing
           </h1>
+          <Image src="/graphicDesign.png" alt="GraphicDesignLogo" width={36} height={36} />
           <p className="text-center sm:text-[16px] lg:text-[24px] font-semibold italic">
             Elevating Brands Through Visual Brilliance
           </p>
@@ -125,10 +128,11 @@ export default function Services() {
             <li>Packaging Design</li>
           </ul>
         </div>
-        <div className="py-12 flex flex-col gap-6 text-center">
+        <div className="py-12 flex flex-col gap-6 text-center items-center">
           <h1 className="sm:text-[24px] lg:text-[40px] text-center font-semibold">
             Digital Marketing
           </h1>
+          <Image src="/digitalMarketing.png" alt="DigitalMarketing" width={36} height={36} />
           <p className="text-center sm:text-[16px] lg:text-[24px] font-semibold italic">
             Navigating the Digital Frontier, Driving Real Results
           </p>

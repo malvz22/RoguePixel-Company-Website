@@ -1,17 +1,12 @@
 import Image from "next/image";
 import { MdEmail } from "react-icons/md";
 import { FaPhone } from "react-icons/fa6";
-
-async function getData() {
-  const res = await fetch(`https://randomuser.me/api?results=12&inc=name,email,phone,id,picture&nat=us,gb`)
-  const data = await res.json();
-  return data.results;
-}
+import getData from "../Fetch/GetData";
 
 
 export default async function Teams() {
 
-  const data = await getData();
+  const data = await getData()
 
   const expertiseArr = ["CEO/Founder", "Creative Director", "Technical Director", "Project Manager", "Digital Marketing Manager", "UI/UX Designer", "Web Developer (Front-end and Back-end)", "Mobile App Developer", "Graphic Designer", "Content Strategist/Writer", "Social Media Manager", "Quality Assurance (QA) Specialist"]
 
@@ -30,8 +25,7 @@ export default async function Teams() {
               return (
                 <>
                   <div className="flex flex-col items-center align-top col-span-6 md:col-span-3 lg:col-span-2" key={teams.id.value}>
-                    {/* <PersonDetails name={teams.name.first + ` ` + teams.name.last} expertise="Random" contact={teams.email} imgSource={teams.picture.medium} /> */}
-                    <Image src={teams.picture.medium} width={120} height={120} quality={100} alt="teamImg" className="rounded-xl mb-3" />
+                    <Image src={teams.picture.large} width={120} height={120} quality={100} alt="teamImg" className="rounded-xl mb-3" />
                     <div className="">
                       <p className="font-semibold">{teams.name.first + ` ` + teams.name.last}</p>
                     </div>
@@ -44,7 +38,6 @@ export default async function Teams() {
                       <FaPhone />
                       <p className="text-[12px]">{teams.phone}</p>
                     </div>
-
                   </div>
                 </>
               );
